@@ -25,6 +25,9 @@
   "devDependencies": {
     "@ember/edition-utils": "^1.1.1",
     "@ember/optional-features": "^1.0.0",
+    "@embroider/compat": "^0.7.1",
+    "@embroider/core": "^0.7.1",
+    "@embroider/webpack": "^0.7.1",
     "@glimmer/component": "^0.14.0-alpha.12",
     "ag-grid-community": "^21.2.2",
     "babel-eslint": "^10.0.2",
@@ -41,7 +44,7 @@
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-uglify": "^3.0.0",
-    "ember-css-modules": "^1.2.1",
+    "ember-css-modules": "1.3.0-beta.1",
     "ember-data": "~3.13.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^2.0.0",
