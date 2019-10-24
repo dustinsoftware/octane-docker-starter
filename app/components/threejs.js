@@ -1,13 +1,12 @@
 import Component from '@ember/component';
+import THREE from 'three';
 
 // From https://glitch.com/~three-js
 export default class ThreeJsComponent extends Component {
   didInsertElement() {
     this.set('initialTime', performance.now());
-    import('three').then(three => {
-      this.initThreeJsScene(three);
-      this.animate();
-    })
+    this.initThreeJsScene(THREE);
+    this.animate();
   }
 
   willDestroyElement() {

@@ -1,17 +1,16 @@
 import Component from '@ember/component';
 import styles from './grid-demo-styles';
 import { loadCss } from '../utils/lazy-css-load';
+import grid from 'ag-grid-community/main';
 
 export default class GridDemoComponent extends Component {
   didInsertElement() {
-    import('ag-grid-community/main').then(grid => {
-      this.initializeGrid(grid);
-    });
+    this.initializeGrid(grid);
   }
 
   styles = styles;
 
-  initializeGrid(grid) {
+  initializeGrid() {
     if (this.isDestroying) {
       return;
     }

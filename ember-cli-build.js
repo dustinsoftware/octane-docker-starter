@@ -4,25 +4,6 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
-    'asset-cache': {
-      include: ['assets/**/*', 'ag-grid.css'],
-    },
-    'esw-cache-fallback': {
-      patterns: [
-        '/lighthouse-results\\.*'
-      ],
-    },
-    babel: {
-      plugins: [require.resolve('ember-auto-import/babel-plugin')]
-    },
-    cssModules: {
-      includeExtensionInModulePath: true,
-    },
-    prember: {
-      urls: [
-        '/',
-      ]
-    }
   });
 
   // Use `app.import` to add additional libraries to the generated
