@@ -1,4 +1,8 @@
 <div class="container m-3">
-  <Navbar />
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <LinkTo @route="index" class="navbar-brand">Web Performance Workshop</LinkTo>
+    <LinkTo @route="threejs" class="nav-link">ThreeJS Demo</LinkTo>
+    <LinkTo @route="grid-demo" class="nav-link">Grid Demo</LinkTo>
+  </nav>
   {{outlet}}
 </div>
