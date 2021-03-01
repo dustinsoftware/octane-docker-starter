@@ -64,7 +64,7 @@
     "prember-middleware": "^0.1.0",
     "qunit-dom": "^0.9.2",
     "start-server-and-test": "^1.10.6",
-    "three": "^0.111.0"
+    "three": "^0.125.0"
   },
   "engines": {
     "node": "8.* || >= 10.*"
